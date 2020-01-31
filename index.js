@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const PORT = process.env.PORT || 4000;
+var port = process.env.PORT || 8080;
 
 const app = express();
 
@@ -29,6 +29,6 @@ app.use(function(err, req, res, next){
   res.status(422).send({error: err._message});
 });
 
-app.listen(PORT, function(){
-  console.log("Server started and running");
+app.listen(port, function(){
+  console.log("Server started and running on " + port);
 })
