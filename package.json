@@ -9,7 +9,7 @@
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "client": "npm run start --prefix client",
     "server": "nodemon index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix client && npm run build --prefix client"
   },
   "author": "Chiamaka <chiamakaokenwa@gmail.com>",
   "license": "ISC",
@@ -21,7 +21,7 @@
     "nodemon": "^2.0.2"
   },
   "engines": {
-    "node": ">=12.3.0",
-    "npm": ">=6.12.0"
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
   }
 }
