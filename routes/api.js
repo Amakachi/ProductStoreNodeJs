@@ -17,7 +17,7 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage }).single('image');
 
 router.get('/collections', function(req, res, next){
-  Collection.find({}, {'name': true, 'price': true, 'image': true, }).sort({_id:-1}).then(function(collections){
+  Collection.find({}, {'name': true, 'price': true, 'image': true }).sort({_id:-1}).then(function(collections){
     res.send(collections);
   }).catch(function(next){
     res.send(next);

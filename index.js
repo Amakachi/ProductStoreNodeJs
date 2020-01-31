@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
-mongoose.connect('mongodb://localhost/mystore', {useNewUrlParser: true});
+mongoose.connect('mongodb://collection:daniella1@ds149481.mlab.com:49481/heroku_zj7q4h7g', {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 
 //enables cors
