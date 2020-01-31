@@ -2,10 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const PORT = process.env.PORT || 4000;
 
 const app = express();
 
-mongoose.connect('mongodb://collection:daniella1@ds149481.mlab.com:49481/heroku_zj7q4h7g', {useNewUrlParser: true});
+mongoose.connect('mongodb://admin:daniella1@ds149998.mlab.com:49998/heroku_hxfjqrf6', {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 
 //enables cors
@@ -28,6 +29,6 @@ app.use(function(err, req, res, next){
   res.status(422).send({error: err._message});
 });
 
-app.listen(4000, function(){
+app.listen(PORT, function(){
   console.log("Server started and running");
 })
