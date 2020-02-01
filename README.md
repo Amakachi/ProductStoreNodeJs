@@ -1,4 +1,4 @@
-### `Fronend`
+### `Frontend`
 <br>This is a backend for [https://github.com/Amakachi/ProductStore-React-Js-].<br>
 
 ### `Heroku`
