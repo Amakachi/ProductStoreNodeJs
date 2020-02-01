@@ -1,4 +1,29 @@
-This is a backend for [https://github.com/Amakachi/ProductStore-React-Js-].<br>
+### `Fronend`
+<br>This is a backend for [https://github.com/Amakachi/ProductStore-React-Js-].<br>
+
+### `Heroku`
+This application is hosted on heroku with url https://productstoreapp-backend.herokuapp.com/
+
+### `GET all products`
+GET https://productstoreapp-backend.herokuapp.com/api/collections/
+<br> This endpoint gets all the list of products <br>
+
+### `GET product by id`
+GET https://productstoreapp-backend.herokuapp.com/api/collections/{product_id}
+This endpoint list the products by id<br>
+
+### `POST create new product`
+POST https://productstoreapp-backend.herokuapp.com/api/collections/
+<br>
+Body<br>
+{<br>
+name: "string", <br>
+description: "string", <br>
+price: "string", <br>
+category: "string", <br>
+image: file<br>
+}<br>
+This endpoint creates a new product <br>
 
 Developed with expressJS with Mongodb as the database<br>
 
